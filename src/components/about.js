@@ -9,9 +9,9 @@ export default function About() {
       <Navbar />
       <div className="about-body">
         <img className="about-img" src={about} alt="watching stars"></img>
-        <p className="about-f-text">
+        <h1 className="about-f-text">
           Don’t squeeze in a sedan when you could relax in a van.
-        </p>
+        </h1>
         <p className="about-s-text">
           Our mission is to enliven your road trip with the perfect travel van
           rental. Our vans are recertified before each trip to ensure your
@@ -20,11 +20,13 @@ export default function About() {
           touring the world on 4 wheels.
         </p>
         <div className="about-orn-container">
-          <p className="about-orn-text">Your destination is waiting. Your van is ready.</p>
+          <p className="about-orn-text">
+            Your destination is waiting. Your van is ready.
+          </p>
           <button className="about-orn-button">Explore our vans</button>
         </div>
       </div>
-      <Footer origin="about"/>
+      <Footer origin="about" />
     </div>
   );
 }

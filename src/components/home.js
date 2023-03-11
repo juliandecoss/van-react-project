@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <button className="body-button">Find your van</button>
       </body>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
