@@ -12,6 +12,9 @@ export default function Navbar() {
         <Link to="/about" className="nav-about">
           About
         </Link>
+        <Link to="/vans" className="nav-vans">
+          Vans
+        </Link>
       </div>
     </nav>
   );

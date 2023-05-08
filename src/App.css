@@ -35,7 +35,14 @@ body {
   color: #4d4d4d;
   text-decoration: none;
   font-size: 20px;
+  margin-right: 20px;
 }
+
+.nav-vans {
+    color: #4d4d4d;
+    text-decoration: none;
+    font-size: 20px;
+  }
 
 /* HOMEEEEEE */
 
@@ -81,7 +88,7 @@ body {
 /* FOOTTER */
 .footer-div {
   position: absolute;
-  height: 15%;
+  height: 10%;
   width: 100%;
   background: #252525;
   bottom: 0;
@@ -89,7 +96,7 @@ body {
   text-align: center;
 }
 .footer-text {
-  margin-top: 5%;
+  margin-top: 2%;
   color: #ffffff;
   font-size: 100%;
 }
@@ -163,4 +170,135 @@ body {
   background: #161616;
   font-size: 15px;
   font-weight: 900;
+}
+
+/*** VAN PAGES ***/
+.van-list-container {
+    padding-inline: 28px
+}
+
+.van-list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+    gap: 34px;
+    margin-top: 57px;
+}
+
+.van-tile a {
+    color: #161616;
+    text-decoration: none;    
+}
+
+.van-tile img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.van-list-container button {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.van-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type:focus {
+    outline: none;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+}
+
+.van-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
+
+i[class*='van-type-'] {
+    padding: 7px 14px;
+}
+
+.link-to-van-id{
+    text-decoration: none;
+}
+.link-to-van-id a:visited {
+    text-decoration: none;
+}
+
+/* VANS DETAIL PAGE */
+.van-detail-return{
+    text-decoration: none;
+    color: #000000;
+}
+.van-detail-return a:visited {
+    text-decoration: none;
+    color: green;
+}
+/* unvisited link */
+.van-detail-return a:link {
+    text-decoration: none;
+    color: red;
+  }
+  
+  /* visited link */
+.van-detail-return   a:visited {
+    text-decoration: none;
+    color: green;
+  }
+  
+  /* mouse over link */
+.van-detail-return   a:hover {
+    text-decoration: none;
+    color: hotpink;
+  }
+  
+  /* selected link */
+.van-detail-return   a:active {
+    text-decoration: none;
+    color: blue;
+  }
+.van-detail{
+    margin-top: 4%;
+    width: 35%;
+    height: 35%;
+    margin-left: 32%;
+}
+.van-detail img{
+    width: 100%;
+    height: auto;
 }
